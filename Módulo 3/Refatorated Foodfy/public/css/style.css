@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --color-banner: #FBDFDB;
+  --color-author: #777777;
+  --color-recipeContent: #444444;
+}
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  animation-name: intro;
+  animation-duration: 200ms;
+}
+
+@keyframes intro {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ----- LAYOUT ----- */
+#menu {
+  display: grid;
+  grid-template-columns: 90.6px auto;
+  gap: 122.4px;
+  margin: 0 230px;
+  padding: 32px 0;
+}
+
+#logo {
+  text-align: left;
+}
+
+.links {
+  text-align: left;
+}
+
+.link {
+  margin: 0 30px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 26px;
+  color: black;
+}
+
+/* ----- HOME AND RECIPES ----- */
+#banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 230px;
+  background-color: var(--color-banner);
+  border-radius: 30px;
+  height: 366px;
+  width: 940px;
+}
+
+.text {
+  text-align: left;
+  padding-left: 60px;
+  margin-top: 117px;
+}
+
+.text h1 {
+  font-size: 32px;
+}
+
+.text p {
+  padding-top: 10px;
+  opacity: .7;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.logo {
+  height: 300px;
+  margin-top: 66px;
+  margin-right: 100px;
+  justify-self: end;
+}
+
+/* -- HAMBURGER -- */
+#hamburger {
+  margin: auto 230px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.hamburgerTitle {
+  margin-left: 230px;
+  padding: 50px 0 20px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #111111;
+  margin-top: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--color-author);
+}
+
+.card img {
+  border-radius: 15px;
+  width: 300px;
+  height: 140px;
+  margin-top: 5px;
+  object-fit: cover;
+}
+
+/* ----- ABOUT PAGE ----- */
+#aboutHamburger {
+  margin: 0 230px;
+}
+
+.mainTitle {
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.aboutSections h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.aboutSections p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+/* ----- RECIPE ----- */
+.mainRecipeImg {
+  margin: 0 230px;
+  object-fit: cover;
+  width: 940px;
+  height: 280px;
+  border-radius: 15px;
+}
+
+.title {
+  text-align: center;
+}
+
+#foodTitle {
+  margin-top: 50px;
+  font-size: 36px;
+  color: #111111;
+}
+
+.foodAuthor {
+  margin-top: 4px;
+  font-size: 20px;
+  color: #777777;
+}
+
+.content-recipes {
+  margin: 50px 230px 0 230px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: max-content 90px;
+  column-gap: 5px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-recipeContent);
+}
+
+.content-recipes button {
+  align-items: left;
+}
+
+.list {
+  margin: 20px auto 0 230px;
+  visibility: hidden;
+  height: 0;
+}
+
+.list.active {
+  margin: 20px auto 0 230px;
+  visibility: visible;
+  height: auto;
+  margin: 10px 230px 0 230px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-recipeContent);
+}
+
+.descriptionText {
+  margin-top: 4px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-recipeContent);
+}
+
+/* ----- FOOTER ----- */
+#footer {
+  margin-top: 65px;
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 20px;
+}
+
+#footer p {
+  padding: 23px;
+}

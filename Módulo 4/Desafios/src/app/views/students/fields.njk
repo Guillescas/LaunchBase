@@ -1,0 +1,61 @@
+<div class="item">
+  <div>Avatar URL</div>
+  <input 
+    type="text"
+    name="avatar_url"
+    placeholder="http://"
+    value="{{student.avatar_url}}"
+  >
+</div>
+
+<div class="item">
+  <div>Nome</div>
+  <input 
+    type="text"
+    name="name"
+    placeholder="Digite o Nome completo do professor"
+    value="{{student.name}}"
+  >
+</div>
+
+<div class="item">
+  <div>Data de nascimento</div>
+  <input 
+    type="date"
+    name="birth"
+    value="{{student.birth}}"
+  >
+</div>
+
+<div class="item">
+  <div>E-mail</div>
+  <input 
+    type="email"
+    name="email"
+    placeholder="example@example.com.br"
+    value="{{student.email}}"
+  >
+</div>
+
+<div class="item">
+  <div>Ano escolar</div>
+  <select name="schoolingYear">
+    <option {% if student.schoolingYear == "5º Ano - Fundamental" %} selected {% endif %} value="5º Ano - Fundamental">5º Ano - Fundamental</option>
+    <option {% if student.schoolingYear == "6º Ano - Fundamental" %} selected {% endif %} value="6º Ano - Fundamental">6º Ano - Fundamental</option>
+    <option {% if student.schoolingYear == "7º Ano - Fundamental" %} selected {% endif %} value="7º Ano - Fundamental">7º Ano - Fundamental</option>
+    <option {% if student.schoolingYear == "8º Ano - Fundamental" %} selected {% endif %} value="8º Ano - Fundamental">8º Ano - Fundamental</option>
+    <option {% if student.schoolingYear == "9º Ano - Fundamental" %} selected {% endif %} value="9">9º Ano - Fundamental</option>
+    <option {% if student.schoolingYear == "1º Ano - Médio" %} selected {% endif %} value="1º Ano - Médio">1º Ano - Médio</option>
+    <option {% if student.schoolingYear == "2º Ano - Médio" %} selected {% endif %} value="2º Ano - Médio">2º Ano - Médio</option>
+    <option {% if student.schoolingYear == "3º Ano - Médio" %} selected {% endif %} value="3º Ano - Médio">3º Ano - Médio</option>
+  </select>
+</div>
+
+<div class="item">
+  <div>Carga horária Semanal</div>
+  <input 
+    type="number"
+    name="workload"
+    value="{{student.workload}}"
+  >
+</div>

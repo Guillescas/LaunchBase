@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>School Manager</title>
+    <link rel="stylesheet" href="/css/style.css">
+    {% block head %}
+    {% endblock %}
+  </head>
+
+  <body>
+    <header>
+      <div class="links">
+        <a id="teacher" href="/teachers">Teachers</a>
+        <a id="student" href="/students">Students</a>
+      </div>
+    </header>
+
+  {% block content %}{% endblock %}
+      
+  </body>
+  <script src="/js/main.js"></script>
+</html>

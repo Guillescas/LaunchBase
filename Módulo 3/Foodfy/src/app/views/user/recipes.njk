@@ -1,0 +1,21 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+<section id="hamburger">
+
+{% for item in items %}
+  <div class="cards">
+    <div class="card" id="{{ loop.index -1 }}">
+      <img src="{{item.img}}" alt="">
+      <h2 clsas="foodTitle">{{item.recipeTitle}}</h2>
+      <p class="recipleAuthor">{{item.author}}</p>
+    </div>
+  </div>
+{% endfor %} 
+
+</section>
+
+<script src="/js/main.js"></script>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+<section id="hamburger">
+
+  <div class="">
+    <div class="cardCourse" id="{{item.id}}">
+      <h1>Você selecionou o curso: {{item.id}}</h1>
+      <h3>Para saber mais sobre os conteúdos abordados, tempo de duração e quem dará as aulas, clique no botão abaixo para que você seja direcionado à pagina do curso!</h3>
+    </div>
+  </div>
+  <button id="courseBtn" class="moreBtn" target="_blank">Saber mais</button>
+
+</section>
+
+<script src="/js/main.js"></script>
+
+{% endblock %}

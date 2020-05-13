@@ -1,0 +1,25 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+<div class="title">
+  <p>Cursos ofertados pela <a class="link_click-here" href="https://rocketseat.com.br">Rocketseat</a>:</p>
+</div>
+
+<section id="hamburger">
+ 
+    <div class="cards">
+     {% for item in itens %}
+        <div class="card" id="{{item.id}}">
+          <img src="{{item.img}}" alt="Logo de {{item.id}}" href="hrrp://localhost:3000/course/{{item.id}}" target="_blank">
+          <h1>{{item.qntModulos}}</h1>
+          <h2>{{item.price}}</h2>
+        </div>
+      {% endfor %}
+    </div>
+
+</section>
+
+<script src="/js/main.js"></script>
+
+{% endblock %}

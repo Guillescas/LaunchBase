@@ -1,0 +1,25 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+<div id="present">
+  <h1>Gerenciar Receitas</h1>
+</div>
+
+<section class="management present">
+
+  {% for item in items %}
+    <div class="management-card" id="{{ loop.index -1 }}">
+      <div class="card-section-one">
+        <img src="{{item.img}}" alt="">
+      </div>
+      <div class="card-section-two">
+        <p class="recipe-title">{{item.recipeTitle}}</p>
+        <p class="recipe-author">{{item.author}}</p>
+        <a href="/recipes/{{items.id}}/edit" class="recipe-show">Visualizar</a>
+      </div>
+    </div>
+  {% endfor %}
+
+</section>
+
+{% endblock %}

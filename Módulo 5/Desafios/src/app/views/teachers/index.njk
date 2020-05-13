@@ -1,0 +1,35 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+<div class="card">
+  {# <div class="head">
+    <a href="/teacher/create" class="aBtn-index">Cadastrar professor</a>
+  </div> #}
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Nome</th>
+        <th>Matérias à lecionar</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for teacher in teacher %}
+      <tr>
+        <td><img src="{{teacher.avatar_url}}" class="avatar_img"></td>
+        <td>{{teacher.name}}</td>
+        <td>
+          {% for materia in teacher.materias.split(',') %}
+          <span class="materias">{{materia}}</span>
+          {% endfor %}
+        </td>
+        <td><a class="aBtn-index" href="/teachers/{{teacher.id}}">Ver</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% endblock content %}

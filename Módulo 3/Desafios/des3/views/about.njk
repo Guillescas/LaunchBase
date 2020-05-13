@@ -1,0 +1,22 @@
+{% extends 'layout.njk' %}
+
+
+{% block content %}
+
+  <div class="container">
+    <img src="{{about.img}}" alt="Imagem da Rocketseat" srcset="">
+    <p>{{about.description}}</p>
+    <p class="techs">{{about.textTechs}}</p>
+    <ul>
+      {% for item in about.techs %}
+        <li>{{item.tech}}</li>
+      {% endfor %}
+    </ul>
+  </div>
+
+<div id="links-footer" class="links">
+  {% for item in about.links %}
+    <a href="{{item.link}}" target="_blank">{{item.media}}</a>
+  {% endfor %}
+</div>
+{% endblock %}

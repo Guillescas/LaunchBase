@@ -1,0 +1,35 @@
+{
+  "members": [
+    {
+      "avatar_url": "http://google",
+      "name": "Google",
+      "email": "google@gmail.com",
+      "birth": 631152000000,
+      "gender": "F",
+      "blood": "O+",
+      "weight": "80",
+      "height": "180",
+      "id": 1
+    }
+  ],
+  "instructors": [
+    {
+      "id": 6,
+      "avatar_url": "https://img.itdg.com.br/tdg/images/recipes/000/000/770/323683/323683_original.jpg?mode=crop&width=710&height=400",
+      "name": "Arroz",
+      "birth": 923529600000,
+      "gender": "F",
+      "services": "Musculação, esteira, natação",
+      "created_at": 1584535557661
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59893752?s=460&u=c07c8eb71ce76c97bbe756e511597bcb506af578&v=4",
+      "name": "Guilherme Illescas",
+      "birth": 923529600000,
+      "gender": "M",
+      "services": "Musculação, CrossFit",
+      "created_at": 1587036008728
+    }
+  ]
+}

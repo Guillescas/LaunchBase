@@ -1,0 +1,36 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59893752?s=460&u=c07c8eb71ce76c97bbe756e511597bcb506af578&v=4",
+      "name": "Guilherme Illescas",
+      "birth": 923529600000,
+      "schooling": "mestrado",
+      "classType": "Presencial",
+      "materias": "Cálculo, MecFlu, Oiiii",
+      "created_at": 1586887316109
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59893752?s=460&u=c07c8eb71ce76c97bbe756e511597bcb506af578&v=4",
+      "name": "Guilherme Illescas",
+      "birth": 923529600000,
+      "schooling": "doutorado",
+      "classType": "Presencial",
+      "materias": "Opaaa, Alouu",
+      "created_at": 1586889141210
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/59893752?s=460&u=c07c8eb71ce76c97bbe756e511597bcb506af578&v=4",
+      "name": "Guilermino",
+      "birth": 923529600000,
+      "email": "gui.illescas@gmail.com",
+      "schoolingYear": "3º Ano - Médio",
+      "workload": "40",
+      "created_at": 1586983051681
+    }
+  ]
+}

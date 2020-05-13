@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --color-background: #282a36;
+  --color-secbackground: #313342;
+  --color-green: #70f15f;
+  --color-texts: white;
+  --color-rocketseat: #6c4fbb;
+  
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-background);
+  animation-name: intro;
+  animation-duration: 300ms;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  text-align: center;
+  padding: 30px 0;
+}
+
+body {
+  text-align: center;
+}
+
+.links a {
+  color: var(--color-texts);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 30px;
+  transition: 250ms; /* transition */
+
+}
+
+.links a:hover {
+  color: var(--color-green);
+  transition: 250ms;
+}
+
+/* ----- CONTAINER HOME ----- */
+
+.container {
+  margin: 0 auto;
+  padding-top: 40px;
+  color: var(--color-texts);
+  max-width: 800px;
+}
+
+.link_click-here {
+  color: var(--color-texts);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-green);
+  transition: 250ms;
+}
+
+.link_click-here:hover {
+  color: var(--color-green);
+  transition: 250ms;
+}
+
+/* ----- CONTAINER ABOUT ----- */ 
+
+.container img {
+  width: 30%;
+  border-radius: 20px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.techs {
+  padding-top: 20px;
+}
+
+.container ul {
+  padding-top: 10px;
+}
+
+.container li {
+  display: inline;
+  background-color: var(--color-rocketseat);
+  padding: 5px 15px;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+
+/* ----- FOOTER ----- */
+
+#links-footer {
+  padding-top: 150px;
+}
+
+#links-footer a {
+  border-bottom: 1px solid var(--color-links);
+}
+
+/* ----- PAG CONTEUDOS ----- */
+
+.title {
+  color: white;
+  text-align: left;
+  padding-left: 10%;
+  font-size: 20px;
+}
+
+#hamburger {
+  padding-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 800px;
+  gap: 25px;
+  padding: 20px 5% 20px 5%;
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  transition: 400ms;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+  transition-duration: 200ms;
+  height: 500px;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition-duration: 200ms;
+  border: 1px solid var(--color-green);
+}
+
+.card img {
+  margin: 30% auto auto auto;
+}
+
+.card h1 {
+  color: white;
+  margin-top: 60px;
+}
+
+.card h2 {
+  color: white;
+  opacity: .7;
+}
