@@ -9,14 +9,18 @@
       {% if not files[0] %}
         <img src="http://placehold.it/500x500?text=Produto sem foto"/>
       {% else %}
-        <img src="{{files[0].src}}" alt="{{files[0].name}}">
+        <img 
+          src="{{files[0].src}}"
+          alt="{{files[0].name}}"
+          onclick="Lightbox.open()"
+        >
       {% endif %}
 
       <div class="lightbox-target">
         <img 
           src="{{file[0].src}}"
           alt="{{files[0].name}}"
-          onclick="Lightbox.open()"
+          onclick="Lightbox.close()"
         >
         <a 
           href="#" 
